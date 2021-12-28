@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import AddProduct from './AddProduct';
+import Product from './Product';
 
 class Productlist extends Component {
 
@@ -45,6 +46,13 @@ class Productlist extends Component {
             <div>
                 {
                     <AddProduct handleAdd = {this.handleAdd} />
+                    (!products.length)? <p>Aucun produit</p> :
+                    (isLoading)? <p>Loading ...</p> :
+                    products.map( product => <Product 
+                            key={product.id}
+                            product={product}
+                            handleDelete={this.handleDelete}
+                    />)
                     
                 }
             </div>
