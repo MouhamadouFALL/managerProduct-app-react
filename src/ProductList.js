@@ -6,7 +6,7 @@ class Productlist extends Component {
 
     // Récupérer tous les produits dans la base products
     componentDidMount() {
-        axios.get('http://localhost:3003/learners')
+        axios.get('http://localhost:3003/products')
         .then( res => {
             const students = res.data;
             this.setState({ students, isLoading: false });
