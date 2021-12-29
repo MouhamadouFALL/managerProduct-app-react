@@ -3,9 +3,19 @@ import React, { Component } from 'react';
 import AddProduct from './AddProduct';
 import Product from './Product';
 
+import axios from 'axios';
+import { Fragment } from 'react';
+
 class Productlist extends Component {
 
-    state = {isLoading: true, products : [], error: null }
+    constructor() {
+        super();
+        this.state = {isLoading: true, products : [], error: null }
+
+        this.handleDelete = this.handleDelete.bind(this);
+    }
+
+    //state = {isLoading: true, products : [], error: null }
 
     // Récupérer tous les produits dans la base products
     componentDidMount() {
@@ -18,8 +28,8 @@ class Productlist extends Component {
     }
 
      // Ajouter un produit dans la base products
-     handleAdd = ({nom, price, court_description, long_description}) => {
-        axios.post('http://localhost:3005/products/', {nom, price, court_description, long_description})
+     handleAdd = (product) => {
+        axios.post('http://localhost:3005/products/', {product})
         .then( res => {
             this.setState({
                 products: [...this.state.products, res.data]
@@ -39,24 +49,22 @@ class Productlist extends Component {
 
     render() {
 
-        const products = this.state.products;
+        const products = this.state.products
         const isLoading = this.state.isLoading;
 
         return (
-            <div>
+            <Fragment>
                 {
-                    <AddProduct handleAdd = {this.handleAdd} />
                     (!products.length)? <p>Aucun produit</p> :
                     (isLoading)? <p>Loading ...</p> :
                     products.map( product => <Product 
-                            key={product.id}
+                            key={products.id}
                             product={product}
                             handleDelete={this.handleDelete}
                     />)
-                    
                 }
-            </div>
-        );
+            </Fragment>
+        )
     }
 }
 
