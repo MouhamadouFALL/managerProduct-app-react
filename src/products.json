@@ -53,6 +53,15 @@
         "long_description": "kaoakaoaakokoaksakkoakkaokokakokoakksoakoakskoakoskako"
       },
       "id": 6
+    },
+    {
+      "product": {
+        "nom": "JavaScript",
+        "price": "15",
+        "court_description": "qwerty",
+        "long_description": "asdfgtrewq"
+      },
+      "id": 7
     }
   ]
 }
