@@ -7,6 +7,7 @@ import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import Banner from "./layout/Banner";
 import Container from "./Container";
+import AddProduct from "./AddProduct";
 
 
 
@@ -19,8 +20,8 @@ function App() {
       <Route exact path="/">
         <Container nom="Boom"/>
       </Route>
-      {/*<Route path="/addProduct" component={AddProduct} />
-      <Route path="/editProduct" component={Editproduct} />*/}
+      <Route path="/addproduct" component={AddProduct} />
+      {/*<Route path="/editProduct" component={Editproduct} />*/}
       </Switch>
       <Footer />
     </BrowserRouter>

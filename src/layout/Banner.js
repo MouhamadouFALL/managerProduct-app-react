@@ -8,9 +8,7 @@ const Banner = () => {
                     <h1 className="header">Welcome to Boom </h1>
                     <h3 className="fw-light">Liste des produits disponibles</h3>
                     <p className="lead text-muted">Boom vous presentons des produits de qualite superieure</p>
-                    <p>
-                    <a href="./addProduct" className="btn btn-primary my-2">Add Product</a>
-                    </p>
+                    <p><a href="/addproduct" className="btn btn-primary my-2">Add Product</a></p>
                 </div>
             </div>
         </section>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import AddProduct from './AddProduct';
 import Product from './Product';
 
 import axios from 'axios';
@@ -27,15 +26,15 @@ class Productlist extends Component {
         .catch( error => this.setState({ error, isLoading: false}))
     }
 
-     // Ajouter un produit dans la base products
-     handleAdd = (product) => {
+    // Ajouter un produit dans la base products
+    /*handleAdd = product => {
         axios.post('http://localhost:3005/products/', {product})
         .then( res => {
             this.setState({
                 products: [...this.state.products, res.data]
             });
         })
-    }
+    }*/
 
     // Supprimer un produit
     handleDelete(id) {
@@ -56,7 +55,7 @@ class Productlist extends Component {
             <Fragment>
                 {
                     (!products.length)? <p>Aucun produit</p> :
-                    (isLoading)? <p>Loading ...</p> :
+                    (isLoading)? <p> isLoading ...</p> :
                     products.map( product => <Product 
                             key={products.id}
                             product={product}
