@@ -19,14 +19,20 @@ class AddProduct extends Component {
     handleAdd = e => {
         e.preventDefault();
 
+        /*
         const product= {
             nom: this.state.nom,
             price: this.state.price,
             court_description: this.state.court_description,
             long_description: this.state.long_description
-        }
+        }*/
 
-        axios.post('http://localhost:3005/products/', {product})
+        const nom = this.state.nom;
+        const price = this.state.price;
+        const court_description = this.state.court_description;
+        const long_description = this.state.long_description;
+
+        axios.post('http://localhost:3005/products/', {nom, price, court_description, long_description})
         .then( res => {
             this.setState({
                 nom: "", 

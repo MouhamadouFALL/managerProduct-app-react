@@ -1,76 +1,11 @@
 {
   "products": [
     {
-      "product": {
-        "nom": "Java Oracle",
-        "price": "12",
-        "court_description": "Mangue Zig",
-        "long_description": "Mangue venant de zig"
-      },
+      "nom": "KOKA",
+      "price": "20",
+      "court_description": "AS",
+      "long_description": "BCJDSKDJAPOJFC",
       "id": 1
-    },
-    {
-      "product": {
-        "nom": "Java Oracle",
-        "price": "12",
-        "court_description": "Mangue Zig",
-        "long_description": "Mangue venant de zig"
-      },
-      "id": 2
-    },
-    {
-      "product": {
-        "nom": "Java Oracle",
-        "price": "12",
-        "court_description": "Mangue Zig",
-        "long_description": "Mangue venant de zig"
-      },
-      "id": 3
-    },
-    {
-      "product": {
-        "nom": "Java Oracle",
-        "price": "12",
-        "court_description": "Mangue Zig",
-        "long_description": "Mangue venant de zig"
-      },
-      "id": 4
-    },
-    {
-      "product": {
-        "nom": "Java Oracle",
-        "price": "12",
-        "court_description": "Mangue Zig",
-        "long_description": "Mangue venant de zig"
-      },
-      "id": 5
-    },
-    {
-      "product": {
-        "nom": "JavaScript",
-        "price": "14",
-        "court_description": "Zic Zac",
-        "long_description": "kaoakaoaakokoaksakkoakkaokokakokoakksoakoakskoakoskako"
-      },
-      "id": 6
-    },
-    {
-      "product": {
-        "nom": "JavaScript",
-        "price": "15",
-        "court_description": "qwerty",
-        "long_description": "asdfgtrewq"
-      },
-      "id": 7
-    },
-    {
-      "product": {
-        "nom": "JavaScript",
-        "price": "17",
-        "court_description": "ytrewq",
-        "long_description": "qazwsxedcrfvtgbyhnujmikolp"
-      },
-      "id": 8
     }
   ]
 }

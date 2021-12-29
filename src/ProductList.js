@@ -57,7 +57,7 @@ class Productlist extends Component {
                     (!products.length)? <p>Aucun produit</p> :
                     (isLoading)? <p> isLoading ...</p> :
                     products.map( product => <Product 
-                            key={products.id}
+                            key={product.id}
                             product={product}
                             handleDelete={this.handleDelete}
                     />)
