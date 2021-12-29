@@ -5,6 +5,7 @@ import axios from 'axios';
 class AddProduct extends Component {
 
     constructor() {
+        
         super();
         this.state = {nom: "", price: "", court_description: "", long_description: ""};
 
@@ -18,14 +19,6 @@ class AddProduct extends Component {
     // Ajouter le input du formulaire dans le state
     handleAdd = e => {
         e.preventDefault();
-
-        /*
-        const product= {
-            nom: this.state.nom,
-            price: this.state.price,
-            court_description: this.state.court_description,
-            long_description: this.state.long_description
-        }*/
 
         const nom = this.state.nom;
         const price = this.state.price;
@@ -41,14 +34,6 @@ class AddProduct extends Component {
                 long_description: ""
             });
         })
-
-        /*
-        this.props.handleAdd(
-            this.state.nom, 
-            this.state.price, 
-            this.state.court_description, 
-            this.state.long_description
-        );*/
         
     }
 

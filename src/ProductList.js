@@ -26,16 +26,6 @@ class Productlist extends Component {
         .catch( error => this.setState({ error, isLoading: false}))
     }
 
-    // Ajouter un produit dans la base products
-    /*handleAdd = product => {
-        axios.post('http://localhost:3005/products/', {product})
-        .then( res => {
-            this.setState({
-                products: [...this.state.products, res.data]
-            });
-        })
-    }*/
-
     // Supprimer un produit
     handleDelete(id) {
         axios.delete('http://localhost:3005/products/' + id)
