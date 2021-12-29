@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "product": {
+        "nom": "Java Oracle",
+        "price": "12",
+        "court_description": "Mangue Zig",
+        "long_description": "Mangue venant de zig"
+      },
+      "id": 1
+    },
+    {
+      "product": {
+        "nom": "Java Oracle",
+        "price": "12",
+        "court_description": "Mangue Zig",
+        "long_description": "Mangue venant de zig"
+      },
+      "id": 2
+    },
+    {
+      "product": {
+        "nom": "Java Oracle",
+        "price": "12",
+        "court_description": "Mangue Zig",
+        "long_description": "Mangue venant de zig"
+      },
+      "id": 3
+    },
+    {
+      "product": {
+        "nom": "Java Oracle",
+        "price": "12",
+        "court_description": "Mangue Zig",
+        "long_description": "Mangue venant de zig"
+      },
+      "id": 4
+    },
+    {
+      "product": {
+        "nom": "Java Oracle",
+        "price": "12",
+        "court_description": "Mangue Zig",
+        "long_description": "Mangue venant de zig"
+      },
+      "id": 5
+    },
+    {
+      "product": {
+        "nom": "JavaScript",
+        "price": "14",
+        "court_description": "Zic Zac",
+        "long_description": "kaoakaoaakokoaksakkoakkaokokakokoakksoakoakskoakoskako"
+      },
+      "id": 6
+    }
+  ]
+}
