@@ -9,15 +9,11 @@ class AddProduct extends Component {
         this.state = {nom: "", price: "", court_description: "", long_description: ""};
 
         this.handleChange = this.handleChange.bind(this);
-        //this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleAdd = this.handleAdd.bind(this);
     }
 
     // Écouter les événement
     handleChange = e => this.setState({ [e.target.name]: e.target.value});
-    //handleChangeNom = e => this.setState({ nom: e.target.value});
-    //handleChangePrice = e => this.setState({ price: e.target.value});
-    //handleChangeCourtDesc = e => this.setState({ court_description: e.target.value});
-    //handleChangeLongDesc = e => this.setState({ long_description: e.target.value});
 
     // Ajouter le input du formulaire dans le state
     handleAdd = e => {
@@ -52,7 +48,7 @@ class AddProduct extends Component {
 
     render() {
         return (
-            <div className="container" handleAdd={this}>
+            <div className="container" >
                 
                 <form className="row g-3" onSubmit={this.handleAdd}>
                     

@@ -62,6 +62,15 @@
         "long_description": "asdfgtrewq"
       },
       "id": 7
+    },
+    {
+      "product": {
+        "nom": "JavaScript",
+        "price": "17",
+        "court_description": "ytrewq",
+        "long_description": "qazwsxedcrfvtgbyhnujmikolp"
+      },
+      "id": 8
     }
   ]
 }
