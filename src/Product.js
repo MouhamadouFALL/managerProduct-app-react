@@ -17,7 +17,7 @@ class Product extends Component {
             <div className="col">
             <div className="card shadow-sm">
                 
-            <img src='https://cdn.pixabay.com/photo/2020/05/09/11/37/coffee-5149246_960_720.jpg'  width="100%" height="100%" className='img' />
+            <img src={this.props.product.lien}  width="100%" height="100%" className='img' />
             
 
             <div className="card-body">

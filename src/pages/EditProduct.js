@@ -6,7 +6,7 @@ class EditProduct extends Component {
 
     constructor() {
         super();
-        this.state = {nom: "", price: "", court_description: "", long_description: ""};
+        this.state = {nom: "", price: "", lien: "", court_description: "", long_description: ""};
 
         this.handleChange = this.handleChange.bind(this);
         this.updateProduct = this.updateProduct.bind(this);
@@ -21,10 +21,11 @@ class EditProduct extends Component {
 
         const nom = this.state.nom;
         const price = this.state.price;
+        const lien = this.state.lien;
         const court_description = this.state.court_description;
         const long_description = this.state.long_description;
 
-        axios.put('http://localhost:3005/products/' + this.props.productUpdate.id , {nom, price, court_description, long_description})
+        axios.put('http://localhost:3005/products/' + this.props.productUpdate.id , {nom, price, lien, court_description, long_description})
 
 
         //this.history.push("/");
@@ -45,6 +46,11 @@ class EditProduct extends Component {
                     <div className="mb-3">
                         <label htmlFor="Prix Produit" className="form-label">Price Produit</label>
                         <input type="text" name='price' value={this.state.price} onChange={this.handleChange} className="form-control" placeholder="Entrer le prix du produit" />
+                    </div>
+
+                    <div className="mb-3">
+                        <label htmlFor="Nom Produit" className="form-label">Lien D'image du produit</label>
+                        <input type="text" name='nom' value={this.state.lien} onChange={this.handleChange} className="form-control" placeholder="Entrer le lien d'image du produit" />
                     </div>
 
                     <div className="mb-3">

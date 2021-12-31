@@ -1,46 +1,52 @@
 {
   "products": [
     {
-      "nom": "KOKA",
-      "price": "14",
-      "court_description": "Mangue Zig",
-      "long_description": "qwertyuioplkjhgg",
+      "nom": "GATEAU ANNIVERSAIRE",
+      "price": "5,00",
+      "lien": "https://www.linsolite.net/wp-content/uploads/gateau-d-anniversaire-fourre-au-chocolat.jpg",
+      "court_description": "Gâteau au chocolat",
+      "long_description": "’est votre  Anniversaire !!!!\n\nVous pouvez au moment de la réservation\n\ncommander un gâteau spécial anniversaire\n\nà la place du dessert de votre menu \n\nBase Chocolat ou Fruits\n\nTarif 5€ par personne",
+      "id": 1
+    },
+    {
+      "nom": "Café Noir",
+      "price": "2,00",
+      "lien": "https://media.gettyimages.com/photos/mug-on-plate-filled-with-coffee-surrounded-by-coffee-beans-picture-id157528129?s=2048x2048",
+      "court_description": "Café noir pour rester en forme à bas prix",
+      "long_description": "En augmentant la fréquence cardiaque et en améliorant la vigilance et les réflexes, la caféine contenue dans la boisson a un effet dopant lors d’une activité sportive. De plus, elle amplifie la contraction musculaire.\n\nAttention, le café doit être consommé raisonnablement avant le sport, la surconsommation peut être dangereuse !",
+      "id": 2
+    },
+    {
+      "nom": "Café Noir",
+      "price": "2,00",
+      "lien": "https://media.gettyimages.com/photos/mug-on-plate-filled-with-coffee-surrounded-by-coffee-beans-picture-id157528129?s=2048x2048",
+      "court_description": "Café noir pour rester en forme à bas prix",
+      "long_description": "En augmentant la fréquence cardiaque et en améliorant la vigilance et les réflexes, la caféine contenue dans la boisson a un effet dopant lors d’une activité sportive. De plus, elle amplifie la contraction musculaire.\n\nAttention, le café doit être consommé raisonnablement avant le sport, la surconsommation peut être dangereuse !",
+      "id": 3
+    },
+    {
+      "nom": "Café Noir",
+      "price": "2,00",
+      "lien": "https://media.gettyimages.com/photos/mug-on-plate-filled-with-coffee-surrounded-by-coffee-beans-picture-id157528129?s=2048x2048",
+      "court_description": "Café noir pour rester en forme à bas prix",
+      "long_description": "En augmentant la fréquence cardiaque et en améliorant la vigilance et les réflexes, la caféine contenue dans la boisson a un effet dopant lors d’une activité sportive. De plus, elle amplifie la contraction musculaire.\n\nAttention, le café doit être consommé raisonnablement avant le sport, la surconsommation peut être dangereuse !",
       "id": 4
     },
     {
-      "nom": "KOKA",
-      "price": "14",
-      "court_description": "Mangue Zig",
-      "long_description": "qwertyuioplkjhgg",
+      "nom": "Café Noir",
+      "price": "2,00",
+      "lien": "https://media.gettyimages.com/photos/mug-on-plate-filled-with-coffee-surrounded-by-coffee-beans-picture-id157528129?s=2048x2048",
+      "court_description": "Café noir pour rester en forme à bas prix",
+      "long_description": "En augmentant la fréquence cardiaque et en améliorant la vigilance et les réflexes, la caféine contenue dans la boisson a un effet dopant lors d’une activité sportive. De plus, elle amplifie la contraction musculaire.\n\nAttention, le café doit être consommé raisonnablement avant le sport, la surconsommation peut être dangereuse !",
       "id": 5
     },
     {
-      "nom": "KOKA",
-      "price": "14",
-      "court_description": "Mangue Zig",
-      "long_description": "qwertyuioplkjhgg",
+      "nom": "Café Noir",
+      "price": "2,00",
+      "lien": "https://media.gettyimages.com/photos/mug-on-plate-filled-with-coffee-surrounded-by-coffee-beans-picture-id157528129?s=2048x2048",
+      "court_description": "Café noir pour rester en forme à bas prix",
+      "long_description": "En augmentant la fréquence cardiaque et en améliorant la vigilance et les réflexes, la caféine contenue dans la boisson a un effet dopant lors d’une activité sportive. De plus, elle amplifie la contraction musculaire.\n\nAttention, le café doit être consommé raisonnablement avant le sport, la surconsommation peut être dangereuse !",
       "id": 6
-    },
-    {
-      "nom": "KOKA",
-      "price": "14",
-      "court_description": "Mangue Zig",
-      "long_description": "qwertyuioplkjhgg",
-      "id": 7
-    },
-    {
-      "nom": "KOKA",
-      "price": "14",
-      "court_description": "Mangue Zig",
-      "long_description": "qwertyuioplkjhgg",
-      "id": 8
-    },
-    {
-      "nom": "KOKA",
-      "price": "14",
-      "court_description": "Mangue Zig",
-      "long_description": "qwertyuioplkjhgg",
-      "id": 10
     }
   ]
 }
