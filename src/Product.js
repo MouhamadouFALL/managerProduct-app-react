@@ -16,7 +16,9 @@ class Product extends Component {
         return (
             <div className="col">
             <div className="card shadow-sm">
-            <svg className="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                
+            <img src='https://cdn.pixabay.com/photo/2020/05/09/11/37/coffee-5149246_960_720.jpg'  width="100%" height="100%" className='img' />
+            
 
             <div className="card-body">
                 <h2>{this.props.product.nom}</h2>
