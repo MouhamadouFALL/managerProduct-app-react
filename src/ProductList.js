@@ -5,11 +5,13 @@ import Product from './Product';
 import axios from 'axios';
 import { Fragment } from 'react';
 
+import EditProduct from "./pages/EditProduct";
+
 class Productlist extends Component {
 
     constructor() {
         super();
-        this.state = {isLoading: true, products : [], error: null }
+        this.state = { isLoading: true, products : [], error: null, montre: true, productUpdate: {} }
 
         this.handleDelete = this.handleDelete.bind(this);
     }
@@ -35,6 +37,22 @@ class Productlist extends Component {
         .catch(error => this.setState({error: error, isLoading: false}))
     }
 
+    redirec = (productId) => {
+
+        axios.get('http://localhost:3005/products/' + productId)
+        .then( res => {
+            const productToUpdate = res.data;
+            this.setState({ productUpdate: productToUpdate});
+        })
+
+        //const productToUpdate = th
+
+        this.setState({
+            montre: !this.state.montre
+        })
+        
+    }
+    
 
     render() {
 
@@ -44,13 +62,19 @@ class Productlist extends Component {
         return (
             <Fragment>
                 {
+                    this.state.montre ? (
                     (!products.length)? <p>Aucun produit</p> :
                     (isLoading)? <p> isLoading ...</p> :
                     products.map( product => <Product 
                             key={product.id}
                             product={product}
                             handleDelete={this.handleDelete}
+                            redirec={this.redirec}
                     />)
+
+                    ) : (
+                        <EditProduct productUpdate={this.state.productUpdate} />
+                    )
                 }
             </Fragment>
         )

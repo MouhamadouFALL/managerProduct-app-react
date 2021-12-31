@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Product extends Component {
 
     state = {
-        show: false
+        show: false,
     }
 
     details = () => {
@@ -29,7 +29,7 @@ class Product extends Component {
                 <div className="d-flex justify-content-between align-items-center">
                 <div className="btn-group">
                     <button type="button" className="btn m-2 btn-sm btn-outline-secondary" onClick={this.details}>View</button>
-                    <button type="button" className="btn m-2 btn-sm btn-outline-secondary">Edit</button>
+                    <button type="button" className="btn m-2 btn-sm btn-outline-secondary" onClick={this.props.redirec.bind(this, this.props.product.id)} >Edit</button>
                     <button type="button" className="btn m-2 btn-sm btn-outline-secondary" onClick={this.props.handleDelete.bind(this, this.props.product.id)}>Delete</button>
                 </div>
                 <small className="text-muted">${this.props.product.price}</small>
