@@ -17,10 +17,10 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 you need install :
-    - npm install axios
-    - npm install -g json-server
-    - npm install react-router-dom@5.2.0
-    - npm install react-bootstrap bootstrap@5.1.3
+    - npm install axios \
+    - npm install -g json-server \
+    - npm install react-router-dom@5.2.0 \
+    - npm install react-bootstrap bootstrap@5.1.3 \
 
 ### `npm test`
 
