@@ -8,10 +8,16 @@ class EditProduct extends Component {
         super();
         this.state = {nom: "", price: "", lien: "", court_description: "", long_description: ""};
 
+        this.initialize();
+
         this.handleChange = this.handleChange.bind(this);
         this.updateProduct = this.updateProduct.bind(this);
     }
 
+    initialize = () => {
+        const nom = this.props.productUp.nom;
+        this.setState({nom: nom});
+    }
     
     // Écouter les événement
     handleChange = e => this.setState({ [e.target.name]: e.target.value});
@@ -25,7 +31,7 @@ class EditProduct extends Component {
         const court_description = this.state.court_description;
         const long_description = this.state.long_description;
 
-        axios.put('http://localhost:3005/products/' + this.props.productUpdate.id , {nom, price, lien, court_description, long_description})
+        axios.put('http://localhost:3005/products/' + this.props.productUp.id , {nom, price, lien, court_description, long_description})
 
 
         //this.history.push("/");
@@ -40,12 +46,12 @@ class EditProduct extends Component {
                     
                     <div className="mb-3">
                         <label htmlFor="Nom Produit" className="form-label">Nom Produit</label>
-                        <input type="text" name='nom' value={this.props.productUpdate.nom} onChange={this.handleChange} className="form-control" placeholder="Entrer le nom du produit" />
+                        <input type="text" name='nom' value={this.state.nom} onChange={this.handleChange} className="form-control" placeholder="Entrer le nom du produit" />
                     </div>
 
                     <div className="mb-3">
                         <label htmlFor="Prix Produit" className="form-label">Price Produit</label>
-                        <input type="text" name='price' value={this.state.price} onChange={this.handleChange} className="form-control" placeholder="Entrer le prix du produit" />
+                        <input type="text" name='price' value={this.props.productUp.price} onChange={this.handleChange} className="form-control" placeholder="Entrer le prix du produit" />
                     </div>
 
                     <div className="mb-3">
@@ -64,7 +70,7 @@ class EditProduct extends Component {
                     </div>
 
                     <div className="col-12">
-                        <button type="submit" className="btn btn-primary">Update</button>
+                        <button type="submit" className="btn btn-primary" onClick={this.props.show}>Update</button>
                     </div>
 
                 </form>

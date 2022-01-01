@@ -37,6 +37,12 @@ class Productlist extends Component {
         .catch(error => this.setState({error: error, isLoading: false}))
     }
 
+    show = () => {
+        this.setState({
+            montre: !this.state.montre
+        })
+    }
+
     redirec = (productId) => {
 
         axios.get('http://localhost:3005/products/' + productId)
@@ -45,11 +51,7 @@ class Productlist extends Component {
             this.setState({ productUpdate: productToUpdate});
         })
 
-        //const productToUpdate = th
-
-        this.setState({
-            montre: !this.state.montre
-        })
+        this.show();
         
     }
     
@@ -73,7 +75,7 @@ class Productlist extends Component {
                     />)
 
                     ) : (
-                        <EditProduct productUpdate={this.state.productUpdate} />
+                        <EditProduct productUp={this.state.productUpdate} show={this.show}/>
                     )
                 }
             </Fragment>
