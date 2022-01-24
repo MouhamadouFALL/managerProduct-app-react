@@ -8,6 +8,8 @@ In the project directory, you can run:
 
 ### `npm i`   or   `npm install`
 
+### `cd src`
+
 ### `npx json-server --watch learners.json --port 3003`
 
 ### `npm start`
